@@ -48,7 +48,6 @@ render(){
 
 const mapStateToProps = (data) =>{
   var value = data.data.data
-  // console.log(value,"default value");
   if (data.text.text!=null){
         value = value.filter((text) =>{
       return text['title'].toLowerCase().indexOf(data.text.text.toLowerCase()) >= 0
